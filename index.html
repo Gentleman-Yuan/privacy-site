@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>汤圆听书 隐私政策</title>
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --card: #ffffff;
+    --text: #1a1d21;
+    --text-2: #4a5058;
+    --text-3: #7a828c;
+    --line: #e6e9ee;
+    --accent: #0066ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --card: #1c1f24;
+      --text: #f0f2f5;
+      --text-2: #c2c8d0;
+      --text-3: #8b939d;
+      --line: #2c3138;
+      --accent: #4d94ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+                 "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  header {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    letter-spacing: -0.3px;
+  }
+  .meta {
+    font-size: 13px;
+    color: var(--text-3);
+  }
+  .meta span + span::before {
+    content: "·";
+    margin: 0 8px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 28px 28px 8px;
+  }
+  section { margin-bottom: 30px; }
+  h2 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    color: var(--text);
+    letter-spacing: -0.1px;
+  }
+  p { margin: 0 0 12px; color: var(--text-2); }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin-bottom: 8px; color: var(--text-2); }
+  strong { color: var(--text); font-weight: 600; }
+  code {
+    background: rgba(127,127,127,0.12);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 13.5px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .callout {
+    background: rgba(0,102,255,0.06);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin: 0 0 16px;
+    font-size: 14.5px;
+    color: var(--text-2);
+  }
+  footer {
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--text-3);
+    text-align: center;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>汤圆听书 隐私政策</h1>
+    <div class="meta">
+      <span>更新日期：2026 年 11 月 21 日</span>
+      <span>生效日期：2026 年 11 月 17 日</span>
+      <span>适用版本：1.0.1 及以上</span>
+    </div>
+  </header>
+
+  <div class="card">
+    <section>
+      <h2>一、我们是谁</h2>
+      <p>汤圆听书是 <strong>Audiobookshelf 的第三方客户端</strong>。开发者不运营任何后端服务，也不会把你的账号、收听记录、音频或封面上传到开发者或第三方的服务器。应用只与你主动填写的 Audiobookshelf 服务器通信。</p>
+    </section>
+
+    <section>
+      <h2>二、我们收集什么</h2>
+      <ul>
+        <li><strong>你主动填写的信息</strong>：服务器地址、用户名、密码。密码只用于向该服务器换取访问令牌，换取成功后立即从内存中丢弃，不会写入本机存储。</li>
+        <li><strong>保存在本机的信息</strong>：长效访问令牌（系统 Asset Store 加密存储）、播放进度与断点、书签、媒体库元数据、封面与音频缓存，以及主题、字体、倍速、下载策略等设置。</li>
+        <li><strong>不会收集</strong>：通讯录、短信、通话记录、相册、位置、设备标识符、剪贴板内容。</li>
+        <li><strong>不接入</strong>任何广告、统计埋点或第三方崩溃上报 SDK。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>三、数据存放在哪里</h2>
+      <p>偏好设置与播放快照保存在应用沙箱的 Preferences 中；访问令牌保存在系统 Asset Store；音频与封面缓存保存在应用沙箱，或你通过系统文件选择器授权的下载目录。</p>
+      <p>保存期限：本机数据一直保留到你主动退出登录或卸载应用——退出登录会立即清除令牌与进度缓存，卸载会删除应用沙箱内的全部数据；你授权过的公共下载目录中的文件不会随卸载自动删除，可在文件管理器中自行清理。服务器上的账号与收听记录由你自己的服务器管理员控制，删除方式以该服务器的管理后台为准。</p>
+      <p>本应用不设开发者侧的账号体系，因此不存在「开发者保留你的数据」的情形。</p>
+    </section>
+
+    <section>
+      <h2>四、数据如何传输</h2>
+      <p>应用只访问你填写的服务器地址。请求通过 <code>Authorization: Bearer</code> 请求头携带令牌，封面与音频同样走请求头鉴权，不会把令牌拼进 URL。应用不会把任何请求转发给其它域名。</p>
+      <div class="callout">
+        为兼容局域网自建服务器，应用允许明文 HTTP 连接。如果你通过公网访问，请务必使用 HTTPS。明文连接下，密码、令牌与收听记录可能被同一网络内的其他人截获。鸿蒙的网络放行配置是编译期静态资源，无法在运行期只放行你填的那台服务器，所以应用保持全局放行，而不是假装它是安全的。
+      </div>
+    </section>
+
+    <section>
+      <h2>五、权限说明</h2>
+      <ul>
+        <li><strong>网络</strong>（INTERNET / GET_NETWORK_INFO）：连接你的服务器，并判断当前是否为计费网络，用于「仅 Wi-Fi 下载 / 流播」开关。</li>
+        <li><strong>后台运行</strong>（KEEP_BACKGROUND_RUNNING）：锁屏或切到后台后继续播放音频。</li>
+        <li><strong>加速度传感器</strong>（ACCELEROMETER）：仅在睡眠定时器运行且未关闭「摇晃重置」时采样，用于摇晃重置计时。</li>
+        <li><strong>振动</strong>（VIBRATE）：摇晃重置成功时给出触觉反馈，可单独关闭。</li>
+        <li><strong>文件访问</strong>（FILE_ACCESS_PERSIST）：持久化你选择的下载目录授权，重启后仍能读写该目录。</li>
+      </ul>
+      <p>以上权限都可以拒绝，拒绝后只有对应功能不可用，不影响登录与在线播放。</p>
+    </section>
+
+    <section>
+      <h2>六、共享与第三方</h2>
+      <p>应用不会出售、出租或向第三方共享你的个人信息。</p>
+      <p>「问题反馈」面板会生成一段诊断信息（应用版本、设备型号、系统版本、当前服务器地址等），只有你主动点「复制诊断信息」并发给对方时，它才会离开本机。</p>
+      <p>只有当你主动点击「项目主页」「问题反馈」时，才会跳到系统浏览器打开外部网站，该网站按其自身隐私政策处理信息。</p>
+      <p>通过应用市场（如 AppGallery）安装与更新时，分发平台可能按其隐私政策处理安装与统计信息，这部分不由本应用控制。</p>
+    </section>
+
+    <section>
+      <h2>七、你的控制权</h2>
+      <ul>
+        <li>在「设置 → 下载与存储 → 已下载内容」中可逐本删除离线文件；更换下载位置后，旧目录里的文件可按页面提示在文件管理器中自行清理。</li>
+        <li>在「设置 → 服务器与账号 → 退出登录」中退出，会清除本机令牌与进度缓存。</li>
+        <li>卸载应用会删除应用沙箱内的全部数据；你授权过的公共下载目录不会被自动删除。</li>
+        <li>删除服务器上的收听记录、书签或音频文件，需要登录你的 Audiobookshelf 服务端操作。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>八、儿童、变更与联系</h2>
+      <p>本应用不面向 14 岁以下儿童单独收集个人信息，也不会主动索取与听书无关的权限。</p>
+      <p>政策更新时会修改本页并更新顶部日期。如有疑问，可通过「设置 → 关于 → 问题反馈」复制诊断信息后到 GitHub Issues 提问。</p>
+    </section>
+  </div>
+
+  <footer>
+    汤圆听书 · Audiobookshelf 第三方 HarmonyOS 客户端
+  </footer>
+</div>
+</body>
+</html>
